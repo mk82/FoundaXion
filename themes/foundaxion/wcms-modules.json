@@ -1,13 +1,13 @@
 {
     "version": 1,
     "themes": {
-        "sky": {
-            "name": "Sky",
-            "repo": "https://github.com/robiso/sky/tree/master",
-            "zip": "https://github.com/robiso/sky/archive/master.zip",
-            "summary": "Default WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
-            "version": "3.5.0",
-            "image": "https://raw.githubusercontent.com/robiso/sky/master/preview.jpg"
+        "foundaxion": {
+            "name": "Foundaxion",
+            "repo": "https://github.com/mk82/FoundaXion/tree/main/themes/foundaxion",
+            "zip": "https://github.com/mk82/FoundaXion/tree/main/themes/foundaxion/archive/foundaxion.zip",
+            "summary": "Custom WonderCMS theme based on Sky (2026). Theme includes Bootstrap and jQuery. Uses AOS JS and AnimXYZ.io animations.",
+            "version": "1.0",
+            "image": "https://raw.githubusercontent.com/mk82/FoundaXion/main/themes/foundaxion/preview.png"
         }
     }
 }
