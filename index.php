@@ -490,7 +490,7 @@ class Wcms
 				'siteTitle' => 'Website title',
 				'siteLang' => 'en',
 				'adminLang' => 'en',
-				'theme' => 'sky',
+				'theme' => 'foundaxion',
 				'defaultPage' => 'home',
 				'login' => 'loginURL',
 				'forceLogout' => false,
