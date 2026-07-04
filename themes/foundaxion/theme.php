@@ -28,12 +28,12 @@
 
 		<!-- Admin CSS -->
 		<?= $Wcms->css() ?>
+
+		<!-- Simple CSS -->
+		<link rel="stylesheet" rel="preload" as="style" href="https://cdn.simplecss.org/simple.min.css">
 		
 		<!-- Theme CSS -->
 		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
-
-		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 		<!-- AnimXYZ CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
@@ -44,12 +44,12 @@
 		<?= $Wcms->settings() ?>
 
 		<?= $Wcms->alerts() ?>
-
-		<section id="topMenu">
+		<!-- Adda topbar default? -->
+		<section id="topMenu"> <!-- Change to <Header>? Extend - Logo, search, etc -->
 			<div class="inner">
 				<nav>
 					<ul class="menu">
-						<!-- Menu, same on each page -->
+						<!-- Menu -->
 						<?= $Wcms->menu() ?>
 
 					</ul>
@@ -57,7 +57,7 @@
 			</div>
 		</section>
 
-		<div id="wrapper">
+		<div id="wrapper"> <!-- Do we need this div? -->
 			<section id="intro" class="wrapper style1 fullscreen">
 				<div class="inner">
 					<!-- Main content for each page -->
@@ -66,7 +66,7 @@
 				</div>
 			</section>
 
-			<section class="wrapper style2">
+			<section class="wrapper style2"> <!-- ID? Create this section in editor w/ new additional content block -->
 					<div class="inner">
 						<!-- Static editable block, same on each page -->
 						<?= $Wcms->block('subside') ?>
@@ -75,7 +75,7 @@
 			</section>
 		</div>
 
-		<footer class="wrapper">
+		<footer class="wrapper"> <!-- ID? -->
 			<div class="inner">
 				<!-- Footer -->
 				<?= $Wcms->footer() ?>
@@ -85,8 +85,5 @@
 
 		<!-- Admin JavaScript. More JS libraries can be added below -->
 		<?= $Wcms->js() ?>
-
-		<!-- Bootstrap JavaScript -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	</body>
 </html>
