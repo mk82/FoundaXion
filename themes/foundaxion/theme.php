@@ -28,15 +28,22 @@
 
 		<!-- Admin CSS -->
 		<?= $Wcms->css() ?>
-
-		<!-- Simple CSS -->
-		<link rel="stylesheet" rel="preload" as="style" href="https://cdn.simplecss.org/simple.min.css">
 		
 		<!-- Theme CSS -->
 		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
+		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/custom.css') ?>">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 		<!-- AnimXYZ CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+
+		<!-- AOS CSS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	</head>
 
 	<body>
@@ -44,7 +51,29 @@
 		<?= $Wcms->settings() ?>
 
 		<?= $Wcms->alerts() ?>
-		<!-- Adda topbar default? -->
+		<!-- Top bar for logo and social links -->
+		<nav id="topBar" class="navbar navbar-dark fixed-top">
+			
+					<div id="site-logo">
+						<a href="#" target="_blank"><img src="https://staging.mk82.com/cms/data/files/foundaxion-logo-01.png" alt="FoundaXion" width="auto" /></a>
+					</div>
+					<ul class="social-icons">
+						<li>
+							<a href="https://instagram.com/YourIG" target="_blank"> <i class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="https://facebook.com/YourFacebookURL" target="_blank"> <i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="https://linkedin.com" target="_blank"> <i class="fa fa-linkedin"></i></a>
+						</li>
+						<li>
+							<a href="https://youtube.com/c/YourChannelURL" target="_blank"> <i class="fa fa-youtube"></i></a>
+						</li>
+					</ul>
+		</nav>
+
+		<!-- Add a top menu default? -->
 		<section id="topMenu"> <!-- Change to <Header>? Extend - Logo, search, etc -->
 			<div class="inner">
 				<nav>
@@ -59,7 +88,7 @@
 
 		<div id="wrapper"> <!-- Do we need this div? -->
 			<section id="intro" class="wrapper style1 fullscreen">
-				<div class="inner">
+				<div class="inner cover-container w-100 h-100">
 					<!-- Main content for each page -->
 					<?= $Wcms->page('content') ?>
 
@@ -85,5 +114,12 @@
 
 		<!-- Admin JavaScript. More JS libraries can be added below -->
 		<?= $Wcms->js() ?>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+		<!-- AOS JS Library -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>AOS.init({duration: 1500});</script>
 	</body>
 </html>
