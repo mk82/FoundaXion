@@ -4,7 +4,7 @@
         "foundaxion": {
             "name": "FoundaXion",
             "repo": "https://github.com/mk82/FoundaXion/tree/main/themes/foundaxion",
-            "zip": "https://github.com/mk82/FoundaXion/tree/main/themes/foundaxion/archive/FoundaXion.zip?raw=true",
+            "zip": "https://raw.githubusercontent.com/mk82/FoundaXion/main/themes/foundaxion/archive/FoundaXion.zip",
             "summary": "Custom WonderCMS theme based on Sky (2026). Theme includes Bootstrap and jQuery. Uses AOS JS and AnimXYZ.io animations.",
             "version": "1.0",
             "image": "https://raw.githubusercontent.com/mk82/FoundaXion/main/themes/foundaxion/preview.png"
