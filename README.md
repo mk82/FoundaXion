@@ -1,3 +1,3 @@
 # FoundaXion
 
-https://raw.githubusercontent.com/mk82/FoundaXion/refs/heads/main/themes/foundaxion/wcms-modules.json
+Download, unzip, place the files in your web root, and go to your url.
