@@ -3,12 +3,12 @@
 
 @font-face {
 	font-family: 'Inter';
-	font-display: swap;
+	font-display: block;
 	src: url('fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype')
 }
 @font-face {
 	font-family: 'Archivo-Black';
-	font-display: swap;
+	font-display: block;
 	src: url('fonts/ArchivoBlack-Regular.ttf') format('truetype')
 }
 
@@ -354,11 +354,10 @@ body {
 #site-logo {
     float: left;
     height: 100%;
-    line-height: 27px;
 }
-#site-logo img {
+#site-logo img, #site-logo svg {
     margin-left: 40px;
-    max-width: 120px;
+    max-width: 200px;
 }
 .social-icons{
     /*margin-top:-5px;*/
