@@ -55,7 +55,11 @@
 		<nav id="topBar" class="navbar navbar-dark fixed-top">
 			
 					<div id="site-logo">
-						<a href="#" target="_blank"><img src="https://staging.mk82.com/cms/data/files/foundaxion-logo-01.png" alt="FoundaXion" width="auto" /></a>
+						<a href="<?= $Wcms->url('home') ?>"><svg xmlns="http://w3.org" viewBox="0 0 200 30" width="100%" height="100%">
+  <rect width="200" height="30" fill="transparent" />
+  <text x="0" y="21" font-family="Archivo-Black" font-size="20px" fill="rgba(255,255,255,0.8)">
+    FoundaXion
+  </text>
 					</div>
 					<ul class="social-icons">
 						<li>
