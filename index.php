@@ -4,6 +4,7 @@
  * @author Robert Isoski (https://robert.si)
  * @see https://www.wondercms.com
  * @license MIT
+ * Adapted for FoundaXion by mk82 (https://mk82.com)
  */
 
 session_start();
@@ -516,6 +517,7 @@ class Wcms
 						'visibility' => 'show',
 						self::DB_MENU_ITEMS_SUBPAGE => new stdClass()
 					]
+					// Add Blog here as default? (AOP)
 				]
 			],
 			'pages' => [
@@ -538,11 +540,9 @@ class Wcms
 					'description' => 'A page description is also good for search engines.',
 					'content' => '<h1>Welcome to your website</h1>
 
-<p>Your password for editing everything is: <b>' . $password . '</b></p>
+<p>Your password for editing the site is: <b>' . $password . '</b></p>
 
-<p><a href="' . self::url('loginURL') . '" class="button">Click here to login</a></p>
-
-<p>To install an awesome editor, open Settings/Plugins and click Install Summernote.</p>',
+<p><a href="' . self::url('loginURL') . '" class="button">Click here to login</a></p>',
 					self::DB_PAGES_SUBPAGE_KEY => new stdClass()
 				],
 				'how-to' => [
@@ -559,11 +559,11 @@ class Wcms
 <p>Pages can be created in Settings.</p>
 
 <h2>Start a blog or change your theme</h2>
-<p>To install, update or remove themes/plugins, visit Settings.</p>
+<p>To install, update or remove plugins, visit Settings.</p>
 
 <h2><b>Support WonderCMS</b></h2>
-<p>WonderCMS has been free for over 18 years.<br>
-<a href="https://www.wondercms.com/donate" target="_blank">Click here to buy us a coffee</a> or <a href="https://swag.wondercms.com" target="_blank">get an amazing WonderCMS t-shirt</a>.</p>',
+<p>FoundaXion is adapted from WonderCMS.<br>
+<a href="https://www.wondercms.com/donate" target="_blank">Click here to buy them a coffee</a>.</p>',
 					self::DB_PAGES_SUBPAGE_KEY => new stdClass()
 				]
 			],
@@ -1275,7 +1275,7 @@ EOT;
 	}
 
 	/**
-	 * Return array with all themes and their data
+	 * Return array with all themes and their data - ***Disable this? Which part?***
 	 * @param string $type
 	 * @return array
 	 * @throws Exception
@@ -1361,7 +1361,7 @@ EOT;
 	}
 
 	/**
-	 * Retrieve cached Themes/Plugins data
+	 * Retrieve cached Themes/Plugins data - ***Disable this?***
 	 * @param string $type
 	 * @return array|null
 	 * @throws Exception
@@ -1446,7 +1446,7 @@ EOT;
 	}
 
 	/**
-	 * Update cache for default themes/plugins modules.
+	 * Update cache for default themes/plugins modules. ***Gotta be this. How to distiguish between themes & plugins?
 	 * @return void
 	 * @throws Exception
 	 */
@@ -3075,7 +3075,7 @@ EOT;
 	}
 
 	/**
-	 * Render Plugins/Themes cards
+	 * Render Plugins/Themes cards ***Could be here***
 	 * @param string $type
 	 * @return string
 	 * @throws Exception
